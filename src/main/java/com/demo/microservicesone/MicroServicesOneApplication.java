@@ -11,12 +11,7 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 @SpringBootApplication
 public class MicroServicesOneApplication extends SpringBootServletInitializer {
 
-	/*public static void main(String[] args) {
-		SpringApplication.run(CrasEurekaServerApplication.class, args);
-	}*/
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		
-		return application.sources(MicroServicesOneApplication.class);
+	public static void main(String[] args) {
+		SpringApplication.run(MicroServicesOneApplication.class, args);
 	}
 }
